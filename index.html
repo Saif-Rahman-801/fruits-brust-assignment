@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruits Brust</title>
+    <!-- Tailwind and Daisy Ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container mx-auto">
+      <!-- nav section -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <ul class="flex gap-7">
+              <li><a>Homepage</a></li>
+              <li><a>About us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center">
+            <img src="./images/logo.png" alt="" />
+            <h2 class="normal-case text-xl">Fruit Burst</h2>
+          </div>
+          <div class="navbar-end">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="search here"
+              class="bg-white h-12 w-96 px-5 pr-10 rounded-full outline-none"
+            />
+            <button class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
