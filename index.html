@@ -25,49 +25,53 @@
       }
       .slideOneBg {
         background-image: url("./images/banner1.png");
+        background-position: center;
       }
       .slideTwoBg {
         background-image: url("./images/banner2.png");
+        background-position: center;
       }
       .slideThreeBg {
         background-image: url("./images/banner3.png");
+        background-position: center;
       }
       .slideFourBg {
         background-image: url("./images/banner4.png");
+        background-position: center;
       }
     </style>
   </head>
   <body>
     <header class="container mx-auto">
       <!-- nav section -->
-      <section class="md:bg-[#F85559] rounded-full md:text-white mt-5 px-5">
+      <section class="lg:bg-[#F85559] rounded-full lg:text-white mt-5 px-5">
         <nav>
           <div class="navbar">
-            <div class="navbar-start md:hidden inline-flex">
+            <div class="navbar-start lg:hidden inline-flex">
               <img src="./images/logo.png" alt="" />
               <h3 class="normal-case text-xl font-bold ml-3">Fruit Brust</h3>
             </div>
             <div class="navbar-start hidden md:inline-flex">
-              <ul class="flex gap-6 md:inline-flex">
+              <ul class="flex gap-6 md:hidden lg:inline-flex">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="">Join</a></li>
               </ul>
             </div>
-            <div class="navbar-center hidden md:inline-flex">
+            <div class="navbar-center hidden lg:inline-flex">
               <img src="./images/logo.png" alt="" />
               <h3 class="normal-case text-4xl font-bold ml-3">Fruit Brust</h3>
             </div>
-            <div class="navbar-end md:relative">
+            <div class="navbar-end lg:relative">
               <input
                 type="search"
                 name="search"
                 placeholder="search here"
-                class="hidden md:inline-flex md:w-72 md:h-14 md:rounded-full pl-5 outline-none"
+                class="hidden lg:inline-flex lg:w-72 lg:h-14 lg:rounded-full pl-5 outline-none"
               />
               <button
-                class="btn btn-ghost btn-circle hidden md:inline-flex md:absolute"
+                class="btn btn-ghost btn-circle hidden lg:inline-flex lg:absolute"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +88,7 @@
                   />
                 </svg>
               </button>
-              <div class="dropdown md:hidden">
+              <div class="dropdown lg:hidden">
                 <label tabindex="0" class="btn btn-ghost btn-circle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -108,10 +112,10 @@
       </section>
       <!-- banner section -->
       <section class="container mx-auto my-7">
-        <div class="carousel w-full">
+        <div class="carousel w-full ">
           <div
             id="slide1"
-            class="carousel-item relative w-full slideOneBg bg-blend-overlay bg-no-repeat bg-cover h-[100vh] md:h-[90vh] rounded-lg bg-[#594747]"
+            class="carousel-item relative w-full slideOneBg bg-blend-overlay bg-no-repeat bg-cover h-[calc(100vh - 200px)] md:h-[100vh - 100px] rounded-lg bg-[#594747] lg:py-40 md:py-10 py-7"
           >
             <div class="flex flex-col justify-center items-center w-full">
               <h3 class="text-white text-4xl md:text-7xl font-bold text-center">
@@ -130,13 +134,21 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide4" class="btn btn-circle bg-[#121212] text-white border-0">❮</a>
-              <a href="#slide2" class="btn btn-circle bg-[#121212] text-white border-0">❯</a>
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-[#121212] text-white border-0"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#121212] text-white border-0"
+                >❯</a
+              >
             </div>
           </div>
           <div
             id="slide2"
-            class="carousel-item relative w-full slideTwoBg bg-blend-overlay bg-no-repeat bg-cover h-[100vh] md:h-[90vh] rounded-lg bg-[#201f1f8a]"
+            class="carousel-item relative w-full slideTwoBg bg-blend-overlay bg-no-repeat bg-cover bg-center h-[calc(100vh - 200px)] md:h-[100vh - 100px] rounded-lg bg-[#201f1f8a] lg:py-40 md:py-10 py-7"
           >
             <div class="flex flex-col justify-center items-center w-full">
               <h3 class="text-white text-4xl md:text-7xl font-bold text-center">
@@ -155,13 +167,21 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide1" class="btn btn-circle bg-[#121212] text-white border-0">❮</a>
-              <a href="#slide3" class="btn btn-circle bg-[#121212] text-white border-0">❯</a>
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#121212] text-white border-0"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-[#121212] text-white border-0"
+                >❯</a
+              >
             </div>
           </div>
           <div
             id="slide3"
-            class="carousel-item relative w-full slideThreeBg bg-blend-overlay bg-no-repeat bg-cover h-[100vh] md:h-[90vh] rounded-lg bg-[#594747a6]"
+            class="carousel-item relative w-full slideThreeBg bg-blend-overlay bg-no-repeat bg-cover bg-center h-[calc(100vh - 200px)] md:h-[90vh - 100px] rounded-lg bg-[#594747a6] lg:py-40 md:py-10 py-7"
           >
             <div class="flex flex-col justify-center items-center w-full">
               <h3 class="text-white text-4xl md:text-7xl font-bold text-center">
@@ -180,13 +200,21 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide2" class="btn btn-circle bg-[#121212] text-white border-0">❮</a>
-              <a href="#slide4" class="btn btn-circle bg-[#121212] text-white border-0">❯</a>
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#121212] text-white border-0"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-[#121212] text-white border-0"
+                >❯</a
+              >
             </div>
           </div>
           <div
             id="slide4"
-            class="carousel-item relative w-full slideFourBg bg-blend-overlay bg-no-repeat bg-cover h-[100vh] md:h-[90vh] rounded-lg bg-[#352b2ba6]"
+            class="carousel-item relative w-full slideFourBg bg-blend-overlay bg-no-repeat bg-cover bg-center h-[calc(100vh - 200px)] md:h-[100vh - 100px] rounded-lg bg-[#352b2ba6] lg:py-40 md:py-10 py-7"
           >
             <div class="flex flex-col justify-center items-center w-full">
               <h3 class="text-white text-4xl md:text-7xl font-bold text-center">
@@ -205,8 +233,16 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide3" class="btn btn-circle bg-[#121212] text-white border-0">❮</a>
-              <a href="#slide1" class="btn btn-circle bg-[#121212] text-white border-0">❯</a>
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-[#121212] text-white border-0"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#121212] text-white border-0"
+                >❯</a
+              >
             </div>
           </div>
         </div>
