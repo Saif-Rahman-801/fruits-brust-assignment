@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruits Brust</title>
+    <!-- font awesme -->
+    <script
+      src="https://kit.fontawesome.com/2ba2579e54.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Tailwind and Daisy Ui -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
@@ -275,6 +280,7 @@
     <main class="my-32">
       <!-- deal of the day section -->
       <section class="container mx-auto lg:mt-60">
+        <!-- deals heading and time section -->
         <div class="flex flex-col lg:flex-row justify-between items-center">
           <div class="lg:w-1/2 w-[80%]">
             <h2 class="text-5xl font-bold lg:text-start text-center">
@@ -350,6 +356,62 @@
             <div class="text-center">
               <h4 class="text-5xl font-bold">08</h4>
               <p class="text-[#12121299]"><small>seconds</small></p>
+            </div>
+          </div>
+        </div>
+        <!-- deals section -->
+        <div class="mt-12">
+          <div class="card card-compact bg-base-100 border-2">
+            <figure class="py-12">
+              <img src="/images/fruit6.png" alt="fruit" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="border-b-2 text-4xl font-bold py-6">
+                12.90$ - 18.85$
+              </h2>
+              <p class="text-[#12121299] text-xl mt-6">Apples</p>
+              <div class="my-4">
+                <i class="fa-solid fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star-half-stroke text-[#F85559]"></i>
+                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+              </div>
+              <div class="card-actions justify-center">
+                <button
+                  class="text-[#F85559] text-xl mb-12"
+                  onclick="my_modal_1.showModal()"
+                >
+                  Details
+                </button>
+                <dialog id="my_modal_1" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div class="flex flex-col justify-center items-center">
+                      <img src="./images/fruit6.png" alt="" class="w-40 my-6" />
+                      <h3 class="font-bold text-4xl">Apple</h3>
+                      <p class=" text-[#12121299] text-xl">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <div class="lg:my-7 my-4">
+                        <i class="fa-solid fa-star text-[#F85559]"></i>
+                        <i
+                          class="fa-regular fa-star-half-stroke text-[#F85559]"
+                        ></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                      </div>
+                    </div>
+
+                    <div>
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="text-[#F85559] border-2 rounded-lg py-5 px-7 text-xl font-bold mr-8">Close</button>
+                      <button class="text-white bg-[#F85559] border-2 rounded-lg py-5 px-7 text-xl font-bold ">Buy now</button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
             </div>
           </div>
         </div>
