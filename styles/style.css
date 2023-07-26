@@ -1,19 +1,46 @@
 * {
-    font-family: "Lato", sans-serif;
-  }
-  .slideOneBg {
-    background-image: url("../images/banner1.png");
-  }
-  .slideTwoBg {
-    background-image: url("../images/banner2.png");
-  }
-  .slideThreeBg {
-    background-image: url("../images/banner3.png");
-  }
-  .slideFourBg {
-    background-image: url("../images/banner4.png");
-  }
-  .team{
-    background-image: url("../images/team.png");
-    
-  }
+  font-family: "Lato", sans-serif;
+}
+.slideOneBg {
+  background-image: url("../images/banner1.png");
+}
+.slideTwoBg {
+  background-image: url("../images/banner2.png");
+}
+.slideThreeBg {
+  background-image: url("../images/banner3.png");
+}
+.slideFourBg {
+  background-image: url("../images/banner4.png");
+}
+.team {
+  background-image: url("../images/team.png");
+}
+
+.custom-line {
+    position: relative;
+}
+
+.custom-line::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100px;
+    height: 1px;
+    background-color: black;
+}
+
+.custom-lineTwo {
+    position: relative;
+}
+
+.custom-lineTwo::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 100px;
+    height: 1px;
+    background-color: black;
+}
