@@ -39,7 +39,7 @@
     content: "";
     position: absolute;
     bottom: -5px;
-    right: 0;
+    /* right: 0; */
     width: 100px;
     height: 1px;
     background-color: black;
